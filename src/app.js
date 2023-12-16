@@ -8,4 +8,4 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => {
   console.log(`Running in http://localhost:${port}`);
-})
+});
