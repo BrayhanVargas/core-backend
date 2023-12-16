@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node app.js",
-    "error:lint": "npx eslint --fix .",
+    "error:lint": "npx eslint .",
     "fix:lint": "npx prettier --write ."
   },
   "keywords": [],
