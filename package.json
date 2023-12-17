@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node app.js",
     "error:lint": "npx eslint .",
-    "fix:lint": "npx prettier --write ."
+    "fix:lint": "npx prettier --write .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,7 @@
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.0.1",
-    "husky": "8.0.3"
+    "husky": "^8.0.0"
   },
   "husky": {
     "hooks": {
