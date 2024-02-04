@@ -2,10 +2,11 @@
   "name": "core-backend",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node app.js",
+    "dev": "nodemon src/app.js",
     "error:lint": "npx eslint .",
     "fix:lint": "npx prettier --write .",
     "prepare": "husky install"
@@ -14,13 +15,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "html-to-docx": "^1.8.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.2"
   },
   "devDependencies": {
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.0.1",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "nodemon": "^3.0.2"
   },
   "husky": {
     "hooks": {

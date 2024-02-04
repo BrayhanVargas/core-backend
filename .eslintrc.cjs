@@ -20,11 +20,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'prettier/prettier': 'error',
-    semi: ['error', 'always'],
-    indent: ['error', 2],
-    quotes: ['error', 'single'],
-    'no-unused-vars': 'error',
-    'comma-dangle': ['error', 'never']
+    // Puedes omitir reglas que Prettier ya maneja
+    'prettier/prettier': 'error'
   }
-};
+}

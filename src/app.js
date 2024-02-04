@@ -1,11 +1,14 @@
-import express from 'express';
-const app = express();
-const port = 3000;
+import express from 'express'
+import indexRouter from './routes/index.routes.js'
+import cors from 'cors'
+const port = 3000
 
-app.get('/', (req, res) => {
-  res.send('¡Hello world!');
-});
+const app = express()
+app.use(express.json())
+
+app.use(cors())
+app.use(indexRouter)
 
 app.listen(port, () => {
-  console.log(`Running in http://localhost:${port}`);
-});
+  console.log(`Running in http://localhost:${port}`)
+})
