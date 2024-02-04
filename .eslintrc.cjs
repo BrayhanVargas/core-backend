@@ -20,7 +20,6 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    // Puedes omitir reglas que Prettier ya maneja
     'prettier/prettier': 'error'
   }
 }
